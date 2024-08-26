@@ -1,10 +1,8 @@
-import MenuPage from '../components/MenuPage';
-import Navbar from '../components/Navbar';
-
 const Menu = () => (
   <div>
-    <Navbar />
-    <MenuPage />
+    <h1>Menu</h1>
+    <p>Here’s our menu:</p>
+    {/* Add static menu items here */}
   </div>
 );
 

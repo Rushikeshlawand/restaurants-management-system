@@ -1,0 +1,43 @@
+/* WelcomePage.css */
+.welcome-page {
+  text-align: center;
+  margin-top: 2px;
+  padding: 1px;
+}
+
+.welcome-image {
+  max-width: 20%;
+  height: auto;
+  margin-bottom: 5px;
+}
+
+.customer-info {
+  margin-top: 10px;
+}
+
+.customer-info label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.customer-info input {
+  width: 50%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.customer-info button {
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.customer-info button:hover {
+  background-color: #218838;
+}

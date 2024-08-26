@@ -1,31 +1,49 @@
-import { useState } from 'react';
-import { useParams, useHistory } from 'react-router-dom';
-import './WelcomePage.css';
+import React, { useState } from 'react';
+import welcomeImage from '../assets/welcome.png'; // Adjust the path based on your directory structure
+import '../styles/WelcomePage.css';
 
 const WelcomePage = () => {
-  const { tableId } = useParams();
   const [name, setName] = useState('');
-  const history = useHistory();
+  const [mobile, setMobile] = useState('');
 
-  const handleNameSubmit = () => {
-    history.push(`/menu/${tableId}?name=${name}`);
+  const handleStartOrder = () => {
+    // You can handle the submission logic here or just log the inputs for now
+    console.log('Customer Name:', name);
+    console.log('Mobile Number:', mobile);
+    // Further logic to start order can be added here
   };
 
   return (
     <div className="welcome-page">
-      <h1>Welcome to Our Restaurant!</h1>
-      <p>You are seated at Table {tableId}.</p>
-      <label htmlFor="name">Enter your name:</label>
-      <input
-        type="text"
-        id="name"
-        value={name}
-        onChange={(e) => setName(e.target.value)}
-        placeholder="Your Name"
-      />
-      <button onClick={handleNameSubmit}>Submit</button>
+      <img src={welcomeImage} alt="Welcome" className="welcome-image" />
+      <h1>Welcome to MAHARAJA HOTEL</h1>
+      <p>We are delighted to have you with us. Enjoy your dining experience!</p>
+      <p>Your table number is 1</p>
+
+
+      <div className="customer-info">
+        <label htmlFor="name">Enter your name:</label>
+        <input
+          type="text"
+          id="name"
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+          placeholder="Your Name"
+        />
+
+        <label htmlFor="mobile">Enter your mobile number:</label>
+        <input
+          type="text"
+          id="mobile"
+          value={mobile}
+          onChange={(e) => setMobile(e.target.value)}
+          placeholder="Your Mobile Number"
+        />
+<br></br>
+        <button onClick={handleStartOrder}>Start Your Order</button>
+      </div>
     </div>
   );
-}
+};
 
 export default WelcomePage;
