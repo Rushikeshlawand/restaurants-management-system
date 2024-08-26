@@ -1,0 +1,26 @@
+.order-list-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 1em;
+    width: 300px;
+    position: fixed;
+    top: 1em;
+    right: 1em;
+    text-align: left;
+  }
+  
+  .order-list-card ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .order-list-card li {
+    padding: 0.5em 0;
+  }
+  
+  .total-bill {
+    margin-top: 1em;
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+  
