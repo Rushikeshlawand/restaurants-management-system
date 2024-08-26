@@ -1,0 +1,25 @@
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center horizontally */
+  justify-content: center; /* Center vertically */
+  height: 100vh; /* Full viewport height */
+  text-align: center; /* Center text horizontally */
+  padding: 1em; /* Optional: Add padding for spacing around edges */
+}
+
+.welcome-content {
+  max-width: 400px; /* Limit width of the content */
+  width: 100%; /* Ensure it uses full width up to the max-width */
+}
+
+.welcome-image {
+  width: 100%; /* Scale the image to fit the container */
+  max-width: 400px; /* Limit the maximum width of the image */
+  height: auto; /* Maintain aspect ratio */
+  margin-bottom: 1em; /* Space below the image */
+}
+
+h1, p {
+  margin: 0.5em 0; /* Adjust margins for spacing */
+}

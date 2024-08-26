@@ -1,16 +1,30 @@
 nav {
-    background-color: #333;
-    padding: 1em;
-  }
-  
-  nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
-  }
-  
-  nav ul li a {
-    color: white;
-    text-decoration: none;
-  }
-  
+  background-color: #ffffff;
+  padding: 1em;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center; /* Center items horizontally */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+nav ul li {
+  margin: 0; /* Remove default margin from list items */
+  padding: 0; /* Remove default padding from list items */
+}
+
+nav ul li a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  padding: 0.5em 1em; /* Adjust padding to reduce space */
+  font-size: 1em; /* Adjust font size if necessary */
+}
+
+/* Optional: Add a hover effect if desired */
+nav ul li a:hover {
+  background-color: #f0f0f0; /* Background color on hover */
+  border-radius: 4px; /* Rounded corners on hover */
+}

@@ -1,0 +1,72 @@
+.menu-page {
+    padding: 1em;
+    text-align: center;
+  }
+  
+  .menu-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: center;
+  }
+  
+  .menu-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 1em;
+    width: 200px;
+    text-align: center;
+  }
+  
+  .menu-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .menu-details {
+    margin-top: 0.5em;
+  }
+  
+  .menu-details h2 {
+    font-size: 1.2em;
+    margin: 0.5em 0;
+  }
+  
+  .menu-details p {
+    font-size: 1em;
+    color: #555;
+  }
+  
+  .menu-details input {
+    width: 60px;
+    text-align: center;
+    margin: 0.5em 0;
+  }
+  
+  .menu-details button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5em 1em;
+    cursor: pointer;
+  }
+  
+  .menu-details button:hover {
+    background-color: #0056b3;
+  }
+  
+  .order-list {
+    margin-top: 2em;
+  }
+  
+  .order-list ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .order-list li {
+    padding: 0.5em 0;
+  }
+  

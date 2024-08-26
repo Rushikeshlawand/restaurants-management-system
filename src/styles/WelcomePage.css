@@ -28,16 +28,27 @@
   border-radius: 5px;
   border: 1px solid #ccc;
 }
-
-.customer-info button {
-  padding: 10px 20px;
-  background-color: #28a745;
-  color: white;
+.start-order-button {
+  display: flex;
+  align-items: center;
+  background-color: #f8f8f8;
   border: none;
   border-radius: 5px;
+  padding: 10px 20px;
   cursor: pointer;
+  margin-left: 700px;
+  background-color: #31f50e;
+
 }
 
-.customer-info button:hover {
-  background-color: #218838;
+.start-order-icon {
+  width: 20px; /* Adjust size as needed */
+  height: 20px; /* Adjust size as needed */
+  margin-right: 8px; /* Space between image and text */
+ 
 }
+
+.start-order-button:hover {
+  background-color: #ff1b1b;
+}
+

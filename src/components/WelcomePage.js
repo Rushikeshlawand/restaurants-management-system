@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import welcomeImage from '../assets/welcome.png'; // Adjust the path based on your directory structure
+import startOrderIcon from '../assets/start-order-icon.png'; // Adjust the path based on your directory structure
 import '../styles/WelcomePage.css';
 
 const WelcomePage = () => {
@@ -20,7 +21,6 @@ const WelcomePage = () => {
       <p>We are delighted to have you with us. Enjoy your dining experience!</p>
       <p>Your table number is 1</p>
 
-
       <div className="customer-info">
         <label htmlFor="name">Enter your name:</label>
         <input
@@ -39,8 +39,11 @@ const WelcomePage = () => {
           onChange={(e) => setMobile(e.target.value)}
           placeholder="Your Mobile Number"
         />
-<br></br>
-        <button onClick={handleStartOrder}>Start Your Order</button>
+        <br />
+        <button onClick={handleStartOrder} className="start-order-button">
+          <img src={startOrderIcon} alt="Start Order" className="start-order-icon" />
+          Start Your Order
+        </button>
       </div>
     </div>
   );
