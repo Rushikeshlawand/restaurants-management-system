@@ -1,24 +1,23 @@
+/* Remove navbar background */
 .navbar {
-  background-color: #333;
-  padding: 10px;
-}
-
-.nav-links {
-  list-style: none;
+  background-color: transparent; /* Remove background color */
+  padding: 10px 20px; /* Adjust padding as needed */
   display: flex;
-  justify-content: center;
+  justify-content: center; /* Center navbar items */
+  align-items: center; /* Vertically center items */
 }
 
-.nav-links li {
-  margin: 0 15px;
+/* Style for navbar links */
+.navbar a {
+  color: #000; /* Text color */
+  text-decoration: none; /* Remove underline */
+  font-size: 16px; /* Adjust font size as needed */
+  margin: 0 15px; /* Space between items */
+  transition: color 0.3s, text-decoration 0.3s, font-size 0.3s; /* Smooth transition for hover effect */
 }
 
-.nav-links a {
-  color: white;
-  text-decoration: none;
-  font-size: 16px;
-}
-
-.nav-links a:hover {
-  text-decoration: underline;
+/* Hover effect for navbar links */
+.navbar a:hover {
+  color: #007bff; /* Change color on hover */
+  font-size: 18px; /* Increase font size on hover */
 }
