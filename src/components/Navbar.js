@@ -1,16 +1,18 @@
-import { Link } from 'react-router-dom';
-import '../styles/Navbar.css'; // Assuming you want to style the navbar
+import React from 'react';
+import '../styles/Navbar.css'; // Add styling here
 
-const Navbar = () => (
-  <nav>
-    <ul>
-      <li><Link to="/">Home</Link></li>
-      <li><Link to="/menu">Menu</Link></li>
-      <li><Link to="/cart">Cart</Link></li>
-      <li><Link to="/orders">Orders</Link></li>
-      <li><Link to="/admin">Admin</Link></li>
-    </ul>
-  </nav>
-);
+const Navbar = () => {
+    return (
+        <nav className="navbar">
+            <ul className="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu-card">Menu Card</a></li>
+                <li><a href="#my-order">My Order</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    );
+};
 
 export default Navbar;

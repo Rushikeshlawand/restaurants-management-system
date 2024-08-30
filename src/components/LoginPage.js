@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import '../styles/LoginPage.css';
+import welcomeImage from '../assets/welcome.png'; // Make sure this path is correct
 
 const LoginPage = () => {
   const [username, setUsername] = useState('');
@@ -17,31 +18,42 @@ const LoginPage = () => {
     }
   };
 
+  const handleSignUp = () => {
+    navigate('/signup'); // Navigate to SignupPage
+  };
+
   return (
     <div className="login-page">
-      <h2>Login to MAHARAJA HOTEL</h2>
-      <div className="login-form">
-        <label htmlFor="username">Username:</label>
-        <input
-          type="text"
-          id="username"
-          value={username}
-          onChange={(e) => setUsername(e.target.value)}
-          placeholder="Enter your username"
-        />
+      <img src={welcomeImage} alt="Welcome" className="welcome-image" />
+      <div className="login-card">
+        <h2>Login to MAHARAJA HOTEL</h2>
+        <div className="login-form">
+          <label htmlFor="username">Username:</label>
+          <input
+            type="text"
+            id="username"
+            value={username}
+            onChange={(e) => setUsername(e.target.value)}
+            placeholder="Enter your username"
+          />
 
-        <label htmlFor="password">Password:</label>
-        <input
-          type="password"
-          id="password"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-          placeholder="Enter your password"
-        />
+          <label htmlFor="password">Password:</label>
+          <input
+            type="password"
+            id="password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+            placeholder="Enter your password"
+          />
 
-        <button onClick={handleLogin} className="login-button">
-          Login
-        </button>
+          <button onClick={handleLogin} className="login-button">
+            Login
+          </button>
+
+          <button onClick={handleSignUp} className="signup-button">
+            Sign Up
+          </button>
+        </div>
       </div>
     </div>
   );

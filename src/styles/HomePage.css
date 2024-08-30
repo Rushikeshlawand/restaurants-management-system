@@ -1,0 +1,80 @@
+.homepage {
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo {
+    height: 50px;
+}
+
+.carousel {
+    display: flex;
+    overflow-x: auto;
+    padding: 20px;
+}
+
+.carousel-image {
+    margin-right: 10px;
+    height: 200px;
+    width: auto;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.restaurant-images {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.restaurant-image {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+}
+
+.about-info {
+    flex: 2;
+    padding: 0 20px;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer-logo img {
+    height: 50px;
+}
+
+.footer-links {
+    margin: 10px 0;
+}
+
+.footer-links a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-whatsapp .whatsapp-logo {
+    height: 50px;
+    cursor: pointer;
+}

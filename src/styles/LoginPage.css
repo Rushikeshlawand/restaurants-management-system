@@ -1,46 +1,80 @@
 .login-page {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    background-color: #f5f5f5;
-  }
-  
-  .login-form {
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 300px;
-  }
-  
-  .login-form label {
-    margin-bottom: 8px;
-    font-weight: bold;
-    display: block;
-  }
-  
-  .login-form input {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border-radius: 4px;
-    border: 1px solid #ccc;
-  }
-  
-  .login-button {
-    width: 100%;
-    padding: 10px;
-    background-color: #31f50e;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
-    color: #fff;
-  }
-  
-  .login-button:hover {
-    background-color: #ff1b1b;
-  }
-  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh;
+  background-color: #f5f5f5;
+  padding: 0 20px; /* Add some padding to the sides */
+}
+
+.welcome-image {
+  width: 40%; /* Adjust width as needed */
+  max-width: 500px;
+  margin-left: 200px; /* Add some space between the image and the card */
+}
+
+.login-card {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
+  margin-right: 300px;
+}
+
+.login-card h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-form label {
+  margin-bottom: 8px;
+  font-weight: bold;
+  display: block;
+  text-align: left;
+  width: 100%;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.login-button,
+.signup-button {
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  border: none;
+  font-size: 16px;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.login-button {
+  background-color: #31f50e;
+}
+
+.login-button:hover {
+  background-color: #28a745;
+}
+
+.signup-button {
+  background-color: #007bff;
+}
+
+.signup-button:hover {
+  background-color: #0056b3;
+}
