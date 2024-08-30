@@ -1,0 +1,33 @@
+.footer {
+    background-color: #f8f9fa;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.footer-links {
+    margin: 10px 0;
+}
+
+.footer-links a {
+    margin: 0 10px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.footer-icon {
+    font-size: 24px;
+}
+
+.footer-whatsapp {
+    margin-top: 10px;
+}
+
+.whatsapp-icon {
+    font-size: 24px;
+    color: #25D366; /* WhatsApp green color */
+}
