@@ -1,0 +1,32 @@
+.menu-card-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  .categories {
+    flex: 1;
+    margin-right: 20px;
+  }
+  
+  .food-items {
+    flex: 3;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  
+  .category-button {
+    display: block;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .category-button:hover {
+    background-color: #dee2e6;
+  }
+  
