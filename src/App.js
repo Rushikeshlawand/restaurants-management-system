@@ -1,9 +1,9 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import LoginPage from './components/LoginPage'; 
-import SignUpPage from './components/SignUpPage'; 
-import HomePage from './components/HomePage';
-import MenuCard from './components/MenuCard';
+import LoginPage from './components/CustomerPortal/Login/LoginPage'; 
+import SignUpPage from './components/CustomerPortal/SignUpPage/SignUpPage'; 
+import HomePage from './components/CustomerPortal/HomePage/HomePage';
+import MenuCard from './components/CustomerPortal/MyOrder/MenuCard';
 
 function App() {
   return (

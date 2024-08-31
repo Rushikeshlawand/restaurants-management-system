@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import signupImage from '../assets/signup.png'; // Adjust the path based on your directory structure
-import '../styles/SignUpPage.css';
+import './SignUpPage.css';
+
+import signupImage from './assets/signup.png'; // Adjust the path based on your directory structure
+
 
 const SignupPage = () => {
   const [name, setName] = useState('');

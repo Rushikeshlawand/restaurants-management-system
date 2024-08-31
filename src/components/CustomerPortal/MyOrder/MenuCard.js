@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/MenuCard.css';
+import './MenuCard.css';
 
 const MenuCard = () => {
     return (

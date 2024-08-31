@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import '../styles/LoginPage.css';
-import welcomeImage from '../assets/welcome.png'; // Make sure this path is correct
+import '../CustomerPortal/Login/LoginPage.css';
+import welcomeImage from '../assets/images/welcome.png'; // Make sure this path is correct
 
 const LoginPage = () => {
   const [username, setUsername] = useState('');

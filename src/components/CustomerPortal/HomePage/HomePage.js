@@ -1,10 +1,8 @@
 import React from 'react';
-import Navbar from './Navbar';
-import Footer from './Footer'; // Import the Footer component
-import '../styles/HomePage.css';
-
-// Import images
-import logo from '../assets/images/logo.png';
+import '../../CustomerPortal/HomePage/HomePage.css';
+import Navbar from '../Navbar/Navbar';
+import Footer from '../Footer/Footer';
+import logo from '../assets/logo.png';
 
 const carouselImages = [
     require('../assets/images/carousel/carousel1.jpg').default,
