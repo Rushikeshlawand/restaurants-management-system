@@ -1,17 +1,17 @@
 import React from 'react';
-import '../../CustomerPortal/HomePage/HomePage.css';
+import './HomePage.css';
 import Navbar from '../Navbar/Navbar';
 import Footer from '../Footer/Footer';
-import logo from '../assets/logo.png';
+import logo from '../../../Images/maharaja.png';
 
 const carouselImages = [
-    require('../assets/images/carousel/carousel1.jpg').default,
-    require('../assets/images/carousel/carousel2.jpg').default
+    require('../../../Images/carousel/carousel1.jpg').default,
+    require('../../../Images/carousel/carousel2.jpg').default
 ];
 
 const restaurantImages = [
-    require('../assets/images/restaurant/restaurant1.jpg').default,
-    require('../assets/images/restaurant/restaurant2.jpg').default
+    require('../../../Images/restaurant/restaurant1.jpg').default,
+    require('../../../Images/restaurant/restaurant2.jpg').default
 ];
 
 const HomePage = () => {
@@ -37,7 +37,7 @@ const HomePage = () => {
                     <p>Welcome to our restaurant! We serve delicious food with a variety of options. Our team is dedicated to providing you with the best dining experience.</p>
                 </div>
             </section>
-            <Footer /> {/* Add the Footer component */}
+            <Footer />
         </div>
     );
 };

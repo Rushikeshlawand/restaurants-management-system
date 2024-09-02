@@ -5,12 +5,12 @@ const FoodItemCard = ({ item, onAddToBill }) => {
   const [quantity, setQuantity] = useState(1);
 
   const increaseQuantity = () => {
-    setQuantity(prevQuantity => prevQuantity + 1);
+    setQuantity((prevQuantity) => prevQuantity + 1);
   };
 
   const decreaseQuantity = () => {
     if (quantity > 1) {
-      setQuantity(prevQuantity => prevQuantity - 1);
+      setQuantity((prevQuantity) => prevQuantity - 1);
     }
   };
 

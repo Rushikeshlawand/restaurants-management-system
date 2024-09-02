@@ -8,7 +8,7 @@ const BillSummary = ({ selectedItems }) => {
     return {
       total,
       gst,
-      grandTotal: total + gst
+      grandTotal: total + gst,
     };
   };
 

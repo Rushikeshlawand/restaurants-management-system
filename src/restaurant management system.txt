@@ -1,0 +1,43 @@
+project: restaurant management system using react & css 
+
+3 portal are there-> 1.Admin, 2.Chef 3. Customer.
+here customer can login and able to order from menu card and that order will go to chef
+chef can see the order and create food accordingly
+admin can add menu card, add photos of homepage & manage everything about customer.
+first we are making all page are static.
+
+file structure of this project
+
+src
+|
+|
+|--------------------Images	
+|									|-caraousel
+|									|-restaurant
+|--components
+|	|
+|	|-CustomerPortal
+|  			|
+App.js	|	|-Footer
+			|	|
+			|	|-Footer.css
+			|	|-Footer.js
+			|
+			|-HomePage
+			|	|
+			| 	|-HomePage.js
+			|	|-HomePage.css
+			|
+			|-MyOrder
+			|	|-BillSummary.js & BillSummary.css
+			|	|-FoodItemCard.js & FoodItemCard.css
+			|	|-MenuCard.js & MenuCard.css
+			|
+			|-Navbar
+			|	|-Navbar.js & Navbar.css
+			|
+			|-SignUpPage
+			|	|-SignUpPage.js & SignUpPage.css
+			|
+			|-Login
+				|-LoginPage.js & LoginPage.css

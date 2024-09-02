@@ -1,30 +1,31 @@
-import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
-import '../CustomerPortal/Login/LoginPage.css';
-import welcomeImage from '../assets/images/welcome.png'; // Make sure this path is correct
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import "./LoginPage.css";
+import maharaja from '../../Images/maharaja.png';
+
 
 const LoginPage = () => {
-  const [username, setUsername] = useState('');
-  const [password, setPassword] = useState('');
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
   const navigate = useNavigate();
 
   const handleLogin = () => {
     if (username && password) {
-      console.log('Username:', username);
-      console.log('Password:', password);
-      navigate('/home'); // Navigate to HomePage after successful login
+      console.log("Username:", username);
+      console.log("Password:", password);
+      navigate("/home"); // Navigate to HomePage after successful login
     } else {
-      alert('Please enter both username and password');
+      alert("Please enter both username and password");
     }
   };
 
   const handleSignUp = () => {
-    navigate('/signup'); // Navigate to SignupPage
+    navigate("/signup"); // Navigate to SignupPage
   };
 
   return (
     <div className="login-page">
-      <img src={welcomeImage} alt="Welcome" className="welcome-image" />
+      <img src={maharaja} alt="Welcome" className="welcome-image" />
       <div className="login-card">
         <h2>Login to MAHARAJA HOTEL</h2>
         <div className="login-form">

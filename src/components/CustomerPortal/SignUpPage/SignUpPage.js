@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './SignUpPage.css';
+import maharaja from '../../../Images/maharaja.png';
 
-import signupImage from './assets/signup.png'; // Adjust the path based on your directory structure
 
 
 const SignupPage = () => {
@@ -24,7 +24,7 @@ const SignupPage = () => {
 
   return (
     <div className="signup-page">
-      <img src={signupImage} alt="Sign Up" className="signup-image" />
+      <img src={maharaja} alt="Sign Up" className="signup-image" />
       <div className="signup-card">
         <h1>Sign Up to MAHARAJA HOTEL</h1>
         <div className="signup-info">
