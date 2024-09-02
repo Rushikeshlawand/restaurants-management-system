@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom'; // Import useNavigate from react-router-dom
 import './MenuCard.css';
 import FoodItemCard from './FoodItemCard';
 
@@ -29,6 +30,7 @@ const foodData = {
 const MenuCard = () => {
     const [selectedCategory, setSelectedCategory] = useState('drinks');
     const [selectedItems, setSelectedItems] = useState({});
+    const navigate = useNavigate(); // Initialize useNavigate
 
     const handleCategoryChange = (category) => {
         setSelectedCategory(category);
@@ -68,6 +70,10 @@ const MenuCard = () => {
     };
 
     const { total, gst, grandTotal } = calculateTotal();
+
+    const finalizeOrder = () => {
+        navigate('/myorder', { state: { selectedItems } }); // Pass selected items to MyOrder
+    };
 
     return (
         <div className="menu-card-container">
@@ -121,6 +127,7 @@ const MenuCard = () => {
                         <span>₹{grandTotal.toFixed(2)}</span>
                     </div>
                 </div>
+                <button onClick={finalizeOrder} className="finalize-order-button">Finalize Order</button>
             </div>
         </div>
     );

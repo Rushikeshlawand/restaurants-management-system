@@ -1,7 +1,11 @@
 import React from 'react';
+import { useLocation } from 'react-router-dom';
 import './MyOrder.css';
 
-const MyOrder = ({ selectedItems = {}, onDeleteItem, onCallWaiter, onFinalizeOrder }) => { // Default empty object
+const MyOrder = () => {
+    const location = useLocation();
+    const { selectedItems = {} } = location.state || {}; // Use location.state to get selectedItems
+
     const calculateTotal = () => {
         const total = Object.values(selectedItems).reduce((sum, item) => sum + item.price * item.quantity, 0);
         const gst = total * 0.09;
@@ -12,13 +16,19 @@ const MyOrder = ({ selectedItems = {}, onDeleteItem, onCallWaiter, onFinalizeOrd
         };
     };
 
-    const { total, gst, grandTotal } = calculateTotal();
+    const handleDeleteItem = (id) => {
+        // Implement item removal logic
+    };
+
+    const handleCallWaiter = () => {
+        alert("Your call to the waiter has been placed!");
+    };
 
     const handleFinalizeOrder = () => {
-        // Show a confirmation message
         alert("Foodies are getting started with your order. We’ll prepare it shortly!");
-        onFinalizeOrder();
     };
+
+    const { total, gst, grandTotal } = calculateTotal();
 
     return (
         <div className="myorder-page">
@@ -35,7 +45,7 @@ const MyOrder = ({ selectedItems = {}, onDeleteItem, onCallWaiter, onFinalizeOrd
                                     <h3>{item.name}</h3>
                                     <p>₹{item.price.toFixed(2)} x {item.quantity}</p>
                                     <p>Total: ₹{(item.price * item.quantity).toFixed(2)}</p>
-                                    <button onClick={() => onDeleteItem(item.id)} className="remove-item-button">Remove</button>
+                                    <button onClick={() => handleDeleteItem(item.id)} className="remove-item-button">Remove</button>
                                 </div>
                             </div>
                         ))}
@@ -47,7 +57,7 @@ const MyOrder = ({ selectedItems = {}, onDeleteItem, onCallWaiter, onFinalizeOrd
                     </div>
                 )}
                 <button onClick={handleFinalizeOrder} className="finalize-order-button">Finalize Order</button>
-                <button onClick={onCallWaiter} className="call-waiter-button">Call Waiter</button>
+                <button onClick={handleCallWaiter} className="call-waiter-button">Call Waiter</button>
             </div>
         </div>
     );
