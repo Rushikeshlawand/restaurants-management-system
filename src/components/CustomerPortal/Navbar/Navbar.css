@@ -1,10 +1,32 @@
-/* Remove navbar background */
+/* Navbar.css */
+
+/* Navbar container */
 .navbar {
   background-color: transparent; /* Remove background color */
   padding: 10px 20px; /* Adjust padding as needed */
   display: flex;
-  justify-content: center; /* Center navbar items */
   align-items: center; /* Vertically center items */
+  justify-content: space-between; /* Space between logo and links */
+  white-space: nowrap; /* Prevent line break in navbar items */
+}
+
+/* Logo styling */
+.navbar-logo {
+  display: flex;
+  align-items: center; /* Vertically center the logo */
+}
+
+.logo-image {
+  height: 50px; /* Adjust the size of the logo as needed */
+  margin-right: 600px;
+  margin-left: 5px;
+}
+
+/* Navbar links container */
+.navbar-links {
+  display: flex;
+  align-items: center; /* Vertically center links */
+  margin-left: auto; /* Pushes links to the right of the navbar */
 }
 
 /* Style for navbar links */
@@ -20,4 +42,16 @@
 .navbar a:hover {
   color: #007bff; /* Change color on hover */
   font-size: 18px; /* Increase font size on hover */
+}
+
+/* Icon styling */
+.navbar-icon {
+  margin-left: 15px;
+  font-size: 20px; /* Adjust icon size */
+  color: #000; /* Icon color */
+  transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+.navbar-icon:hover {
+  color: #007bff; /* Change color on hover */
 }
