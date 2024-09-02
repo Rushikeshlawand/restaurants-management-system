@@ -1,21 +1,17 @@
 import React, { useState } from 'react';
 import './FoodItemCard.css';
 
-const FoodItemCard = ({ item, onAddToBill }) => {
-  const [quantity, setQuantity] = useState(1);
-
+const FoodItemCard = ({ item, onQuantityChange, onSelectionChange, isSelected, quantity }) => {
   const increaseQuantity = () => {
-    setQuantity((prevQuantity) => prevQuantity + 1);
+    onQuantityChange(item.id, true);
   };
 
   const decreaseQuantity = () => {
-    if (quantity > 1) {
-      setQuantity((prevQuantity) => prevQuantity - 1);
-    }
+    onQuantityChange(item.id, false);
   };
 
-  const handleAddToBill = () => {
-    onAddToBill({ ...item, quantity });
+  const handleSelectionChange = (event) => {
+    onSelectionChange(item.id, event.target.checked);
   };
 
   return (
@@ -30,7 +26,14 @@ const FoodItemCard = ({ item, onAddToBill }) => {
           <button onClick={increaseQuantity} className="quantity-button">+</button>
         </div>
         <div className="food-item-rating">Rating: {item.rating}⭐</div>
-        <button onClick={handleAddToBill} className="add-to-bill-button">Add to Bill</button>
+        <div className="selection-container">
+          <input
+            type="checkbox"
+            checked={isSelected}
+            onChange={handleSelectionChange}
+          />
+          <label>Select</label>
+        </div>
       </div>
     </div>
   );
