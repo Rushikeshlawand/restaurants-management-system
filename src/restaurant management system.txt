@@ -38,6 +38,7 @@ App.js	|	|-Footer
 			|
 			|-SignUpPage
 			|	|-SignUpPage.js & SignUpPage.css
-			|
-			|-Login
+			|-----------------------Testimonials
+			|											|-Testimonials/js & Testimonials.css
+			|-Login										
 				|-LoginPage.js & LoginPage.css
