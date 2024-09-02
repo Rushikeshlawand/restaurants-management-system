@@ -27,11 +27,11 @@ App.js	|	|-Footer
 			|	|
 			| 	|-HomePage.js
 			|	|-HomePage.css
+			|----------MenuCard
+			|					|-FoodItemCard.js & FoodItemCard.css
+			|					|-MenuCard.js & MenuCard.css
 			|
-			|-MyOrder
-			|	|-BillSummary.js & BillSummary.css
-			|	|-FoodItemCard.js & FoodItemCard.css
-			|	|-MenuCard.js & MenuCard.css
+			|--------MyOrder	
 			|
 			|-Navbar
 			|	|-Navbar.js & Navbar.css
