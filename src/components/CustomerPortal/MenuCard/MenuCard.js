@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom'; // Import useNavigate from react
 import './MenuCard.css';
 import FoodItemCard from './FoodItemCard';
 
+
 // Example food data
 const foodData = {
     drinks: [

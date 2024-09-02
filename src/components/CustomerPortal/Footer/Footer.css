@@ -1,33 +1,51 @@
+
 .footer {
-    background-color: #f8f9fa;
+    background-color: #333;
+    color: #fff;
     padding: 20px;
     text-align: center;
+    font-family: Arial, sans-serif;
+    margin-top: auto; /* Pushes the footer to the bottom */
 }
 
 .footer-logo {
+    margin-bottom: 20px;
+}
+
+.footer-logo span {
     font-size: 24px;
     font-weight: bold;
 }
 
 .footer-links {
-    margin: 10px 0;
+    margin-bottom: 20px;
 }
 
-.footer-links a {
+.footer-icon-link {
+    color: #fff;
     margin: 0 10px;
-    color: #007bff;
-    text-decoration: none;
+    display: inline-block;
+    transition: transform 0.3s;
 }
 
 .footer-icon {
     font-size: 24px;
 }
 
-.footer-whatsapp {
-    margin-top: 10px;
+.footer-icon-link:hover .footer-icon {
+    transform: scale(1.2);
 }
 
-.whatsapp-icon {
-    font-size: 24px;
-    color: #25D366; /* WhatsApp green color */
+.footer-whatsapp {
+    margin-top: 20px;
+}
+
+.whatsapp-link {
+    color: #25D366; /* WhatsApp green */
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.whatsapp-link:hover {
+    text-decoration: underline;
 }
