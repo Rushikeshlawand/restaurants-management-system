@@ -1,23 +1,21 @@
-/* Navbar.css */
-
 /* Navbar container */
 .navbar {
-  background-color: transparent; /* Remove background color */
-  padding: 10px 20px; /* Adjust padding as needed */
+  background-color: transparent;
+  padding: 10px 20px;
   display: flex;
-  align-items: center; /* Vertically center items */
-  justify-content: space-between; /* Space between logo and links */
-  white-space: nowrap; /* Prevent line break in navbar items */
+  align-items: center;
+  justify-content: space-between;
+  white-space: nowrap;
 }
 
 /* Logo styling */
 .navbar-logo {
   display: flex;
-  align-items: center; /* Vertically center the logo */
+  align-items: center;
 }
 
 .logo-image {
-  height: 50px; /* Adjust the size of the logo as needed */
+  height: 50px;
   margin-right: 600px;
   margin-left: 5px;
 }
@@ -25,33 +23,35 @@
 /* Navbar links container */
 .navbar-links {
   display: flex;
-  align-items: center; /* Vertically center links */
-  margin-left: auto; /* Pushes links to the right of the navbar */
+  align-items: center;
+  margin-left: auto;
 }
 
 /* Style for navbar links */
 .navbar a {
-  color: #000; /* Text color */
-  text-decoration: none; /* Remove underline */
-  font-size: 16px; /* Adjust font size as needed */
-  margin: 0 15px; /* Space between items */
-  transition: color 0.3s, text-decoration 0.3s, font-size 0.3s; /* Smooth transition for hover effect */
+  color: #fff; /* Change text color to white */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Add shadow for text highlight */
+  text-decoration: none;
+  font-size: 16px;
+  margin: 0 15px;
+  transition: color 0.3s, text-decoration 0.3s, font-size 0.3s;
 }
 
 /* Hover effect for navbar links */
 .navbar a:hover {
-  color: #007bff; /* Change color on hover */
-  font-size: 18px; /* Increase font size on hover */
+  color: #000000; /* Change color on hover */
+  text-shadow: 2px 2px 8px rgba(240, 173, 78, 1); /* Enhance shadow on hover */
+  font-size: 18px;
 }
 
 /* Icon styling */
 .navbar-icon {
   margin-left: 15px;
-  font-size: 20px; /* Adjust icon size */
-  color: #000; /* Icon color */
-  transition: color 0.3s; /* Smooth transition for hover effect */
+  font-size: 20px;
+  color: #fff; /* Change icon color to white */
+  transition: color 0.3s;
 }
 
 .navbar-icon:hover {
-  color: #007bff; /* Change color on hover */
+  color: #0b0b0b; /* Change icon color on hover */
 }

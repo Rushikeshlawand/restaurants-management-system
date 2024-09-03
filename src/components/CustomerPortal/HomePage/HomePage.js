@@ -2,41 +2,26 @@ import React from 'react';
 import './HomePage.css';
 import Navbar from '../Navbar/Navbar';
 import Footer from '../Footer/Footer';
-import logo from '../../../Images/maharaja.png';
-
-const carouselImages = [
-    require('../../../Images/carousel/carousel1.jpg').default,
-    require('../../../Images/carousel/carousel2.jpg').default
-];
-
-const restaurantImages = [
-    require('../../../Images/restaurant/restaurant1.jpg').default,
-    require('../../../Images/restaurant/restaurant2.jpg').default
-];
+import backgroundImage from '../../../Images/Homepage/HomepageBackground.jpg';
+import orderFoodIcon from '../../../Images/Homepage/Orderfood.png'; // Import the image
 
 const HomePage = () => {
     return (
-        <div className="homepage">
+        <div className="homepage" style={{ backgroundImage: `url(${backgroundImage})` }}>
             <header className="header">
-                <img src={logo} alt="Restaurant Logo" className="logo" />
                 <Navbar />
             </header>
-            <section className="carousel">
-                {carouselImages.map((image, index) => (
-                    <img src={image} alt={`Carousel ${index}`} key={index} className="carousel-image" />
-                ))}
-            </section>
-            <section className="info">
-                <div className="restaurant-images">
-                    {restaurantImages.map((image, index) => (
-                        <img src={image} alt={`Restaurant ${index}`} key={index} className="restaurant-image" />
-                    ))}
-                </div>
-                <div className="about-info">
-                    <h2>About Our Restaurant</h2>
-                    <p>Welcome to our restaurant! We serve delicious food with a variety of options. Our team is dedicated to providing you with the best dining experience.</p>
-                </div>
-            </section>
+            <div className="content">
+                <h1>
+                    YOU LOOK HUNGRY 😋
+                    <br />
+                    The Best Indian Food is here...
+                </h1>
+                <button className="order-now-button">
+                    <img src={orderFoodIcon} alt="Order Food" className="order-icon" />
+                    Order Now
+                </button>
+            </div>
             <Footer />
         </div>
     );

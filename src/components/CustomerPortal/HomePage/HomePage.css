@@ -1,80 +1,54 @@
 .homepage {
-    font-family: Arial, sans-serif;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: rgb(255, 255, 255); /* Default text color */
 }
 
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding: 20px;
 }
 
-.logo {
-    height: 50px;
-}
-
-.carousel {
-    display: flex;
-    overflow-x: auto;
-    padding: 20px;
-}
-
-.carousel-image {
-    margin-right: 10px;
-    height: 200px;
-    width: auto;
-}
-
-.info {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-}
-
-.restaurant-images {
-    flex: 1;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-}
-
-.restaurant-image {
-    width: 100%;
-    max-width: 300px;
-    height: auto;
-}
-
-.about-info {
-    flex: 2;
-    padding: 0 20px;
-}
-
-.footer {
-    background-color: #333;
-    color: white;
+.content {
     text-align: center;
-    padding: 20px;
+    margin-top: auto;
+    margin-bottom: 230px;
+    color: rgb(255, 255, 255); /* Default text color within content */
+    text-shadow: 2px 2px 8px rgba(133, 56, 141, 0.7); /* Add shadow for better visibility */
+    margin-left: 20px;
+    margin-right: 700px;
 }
 
-.footer-logo img {
-    height: 50px;
+h1 {
+    font-size: 48px;
+    margin-bottom: 30px;
+    color: rgb(255, 105, 180); /* Example RGB color for the main heading */
 }
 
-.footer-links {
-    margin: 10px 0;
-}
-
-.footer-links a {
-    color: white;
-    margin: 0 10px;
-    text-decoration: none;
-}
-
-.footer-links a:hover {
-    text-decoration: underline;
-}
-
-.footer-whatsapp .whatsapp-logo {
-    height: 50px;
+.order-now-button {
+    font-size: 18px;
+    padding: 10px 20px;
+    color: rgb(253, 253, 253); /* Text color inside the button */
+    background-color: transparent; /* Make the background transparent */
+    border: 2px solid rgb(255, 255, 255); /* Border with RGB color */
+    border-radius: 5px;
     cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex; /* To align image and text horizontally */
+    align-items: center; /* Vertically center the image and text */
+    justify-content: center; /* Center the image and text */
+    margin-left: 320px;
+}
+
+.order-now-button img.order-icon {
+    margin-right: 10px; /* Space between the image and the text */
+    height: 24px; /* Adjust size of the icon */
+}
+
+.order-now-button:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Add slight fill on hover */
+    color: rgb(0, 0, 0); /* Change text color on hover */
 }

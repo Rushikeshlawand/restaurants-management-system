@@ -1,51 +1,51 @@
-
 .footer {
-    background-color: #333;
+
     color: #fff;
-    padding: 20px;
+    padding: 10px;
     text-align: center;
     font-family: Arial, sans-serif;
     margin-top: auto; /* Pushes the footer to the bottom */
-}
-
-.footer-logo {
-    margin-bottom: 20px;
-}
-
-.footer-logo span {
-    font-size: 24px;
-    font-weight: bold;
+    position: fixed; /* Fixes footer to the bottom */
+    bottom: 0; /* Aligns the footer at the bottom */
+    left: 0;
+    width: 100%; /* Full width */
 }
 
 .footer-links {
-    margin-bottom: 20px;
+    margin: 0; /* Removes margin */
 }
 
 .footer-icon-link {
-    color: #fff;
-    margin: 0 10px;
+    margin: 0 15px; /* Adds margin for spacing */
     display: inline-block;
-    transition: transform 0.3s;
+    transition: transform 0.3s, color 0.3s; /* Add transition for color change */
 }
 
 .footer-icon {
-    font-size: 24px;
+    font-size: 20px;
+    color: #fff; /* Default color for icons */
 }
 
 .footer-icon-link:hover .footer-icon {
-    transform: scale(1.2);
+    transform: scale(1.2); /* Scale effect on hover */
 }
 
-.footer-whatsapp {
-    margin-top: 20px;
+.footer-icon-link:nth-child(1):hover .footer-icon {
+    color: #E1306C; /* Instagram color */
 }
 
-.whatsapp-link {
-    color: #25D366; /* WhatsApp green */
-    text-decoration: none;
-    font-size: 18px;
+.footer-icon-link:nth-child(2):hover .footer-icon {
+    color: #1877F2; /* Facebook color */
 }
 
-.whatsapp-link:hover {
-    text-decoration: underline;
+.footer-icon-link:nth-child(3):hover .footer-icon {
+    color: #1DA1F2; /* Twitter color */
+}
+
+.footer-icon-link:nth-child(4):hover .footer-icon {
+    color: #34b7f1; /* Phone color (optional) */
+}
+
+.footer-icon-link:nth-child(5):hover .footer-icon {
+    color: #D44638; /* Email color (optional) */
 }
