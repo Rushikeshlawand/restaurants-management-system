@@ -1,10 +1,26 @@
-project: restaurant management system using react & css 
+Project Overview
 
-3 portal are there-> 1.Admin, 2.Chef 3. Customer.
-here customer can login and able to order from menu card and that order will go to chef
-chef can see the order and create food accordingly
-admin can add menu card, add photos of homepage & manage everything about customer.
-first we are making all page are static.
+Restaurant Management System is a web application built using React and CSS. The system is designed to facilitate operations in a restaurant, featuring three distinct portals:
+
+    Admin Portal:
+        Purpose: Enables administrators to manage various aspects of the restaurant.
+        Features:
+            Add and update menu items.
+            Upload and manage homepage photos.
+            Oversee and manage customer information.
+
+    Chef Portal:
+        Purpose: Allows chefs to handle food orders.
+        Features:
+            View and manage incoming orders.
+            Prepare food based on orders received from the customer portal.
+
+    Customer Portal:
+        Purpose: Provides customers with a user interface to interact with the restaurant.
+        Features:
+            Log in to the system.
+            Browse the menu and place orders.
+            View and manage their orders.
 
 file structure of this project
 
