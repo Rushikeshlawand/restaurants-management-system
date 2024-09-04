@@ -13,11 +13,11 @@ const Navbar = () => {
         <img src={logo} alt="Restaurant Logo" className="logo-image" />
       </div>
       <div className="navbar-links">
-        <Link to="/"><FontAwesomeIcon icon={faHome} className="navbar-icon" /> Home</Link>
-        <Link to="/menu"><FontAwesomeIcon icon={faBars} className="navbar-icon" /> Menu Card</Link>
-        <Link to="/myorder"><FontAwesomeIcon icon={faShoppingCart} className="navbar-icon" /> My Order</Link>
-        <Link to="/testimonials"><FontAwesomeIcon icon={faStar} className="navbar-icon" /> Testimonials</Link>
-        <Link to="/contact"><FontAwesomeIcon icon={faPhone} className="navbar-icon" /> Contact</Link>
+        <Link to="/"><FontAwesomeIcon icon={faHome} className="navbar-icon" /> <b>Home</b></Link>
+        <Link to="/menu"><FontAwesomeIcon icon={faBars} className="navbar-icon" /> <b>Menu Card</b></Link>
+        <Link to="/myorder"><FontAwesomeIcon icon={faShoppingCart} className="navbar-icon" /> <b>My Order</b></Link>
+        <Link to="/testimonials"><FontAwesomeIcon icon={faStar} className="navbar-icon" /> <b>Testimonials</b></Link>
+        <Link to="/contact"><FontAwesomeIcon icon={faPhone} className="navbar-icon" /> <b>Contact</b></Link>
       </div>
     </nav>
   );
