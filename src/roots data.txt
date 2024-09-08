@@ -32,8 +32,8 @@ src
 |   |-- restaurant
 |
 |-- components
-|   |-- Admin
-|   |   |-- HomePage
+|   |-- AdminPortal
+|   |   |-- AdminHomePage
 |   |   |   |-- Home.js
 |   |   |   |-- Home.css
 |   |   |
