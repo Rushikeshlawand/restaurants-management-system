@@ -24,7 +24,6 @@ Restaurant Management System is a web application built using React and CSS. The
 
 file structure of this project
 
-
 src
 |
 |-- Images

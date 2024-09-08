@@ -1,0 +1,55 @@
+/* Admin navbar container */
+.admin-navbar {
+    
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    white-space: nowrap;
+    
+  }
+  
+  /* Logo styling */
+  .admin-navbar-logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo-image {
+    height: 50px;
+    margin-right: 20px;
+  }
+  
+  /* Admin navbar links container */
+  .admin-navbar-links {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Style for navbar links */
+  .admin-navbar a {
+    color: #000000; /* White text color */
+    text-decoration: none;
+    font-size: 16px;
+    margin: 0 15px;
+    transition: color 0.3s, font-size 0.3s;
+  }
+  
+  /* Hover effect for navbar links */
+  .admin-navbar a:hover {
+    color: #f0a500; /* Highlight color on hover */
+    font-size: 18px;
+  }
+  
+  /* Icon styling */
+  .admin-navbar-icon {
+    margin-left: 10px;
+    font-size: 20px;
+    color: #fff; /* White icon color */
+    transition: color 0.3s;
+  }
+  
+  .admin-navbar-icon:hover {
+    color: #f0a500; /* Change icon color on hover */
+  }
+  

@@ -1,64 +1,79 @@
-.admin-homepage-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+/* Container for the form */
+.settings-form-container {
   padding: 20px;
-  background-color: #f8f9fa;
-  min-height: 100vh;
+  max-width: 800px;
+  margin: 0 auto;
+  background: #f9f9f9; /* Light background for better readability */
+  border-radius: 8px; /* Rounded corners for a modern look */
 }
 
-.admin-homepage-card {
-  background-color: white;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 30px;
-  max-width: 600px;
-  width: 100%;
-  margin-top: 50px;
-}
-
-.admin-homepage-card h2 {
+/* Style for the form heading */
+.settings-form-container h2 {
   text-align: center;
-  color: #333;
   margin-bottom: 20px;
 }
 
-.admin-form {
-  display: flex;
-  flex-direction: column;
-}
-
-.admin-form label {
-  margin-bottom: 10px;
-  color: #555;
-}
-
-.admin-form textarea,
-.admin-form input[type="text"],
-.admin-form input[type="file"],
-.admin-form input[type="email"] {
-  padding: 10px;
-  margin-bottom: 20px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
+/* Style for the form */
+.settings-form {
   width: 100%;
+  border-collapse: collapse;
 }
 
-.admin-form textarea {
-  height: 100px;
-  resize: none;
+/* Style for table rows */
+.settings-form table {
+  width: 100%;
+  border: 1px solid #ddd;
 }
 
-.admin-form button {
-  background-color: #007bff;
-  color: white;
+/* Style for table cells */
+.settings-form td {
   padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Style for form labels */
+.settings-form label {
+  display: block;
+  font-weight: bold;
+}
+
+/* Style for form inputs */
+.settings-form input[type="text"],
+.settings-form input[type="email"] {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+/* Style for file inputs */
+.settings-form input[type="file"] {
+  margin-top: 5px;
+}
+
+/* Style for the image preview */
+.image-preview {
+  margin-top: 10px;
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+/* Style for the submit button */
+.submit-button {
+  background-color: #4CAF50; /* Green */
+  color: white;
+  padding: 10px 20px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s;
+  font-size: 16px;
+  margin-top: 10px;
+  display: block;
+  width: 100%;
 }
 
-.admin-form button:hover {
-  background-color: #0056b3;
+/* Hover effect for the submit button */
+.submit-button:hover {
+  background-color: #45a049;
 }

@@ -3,17 +3,22 @@ import { useNavigate } from "react-router-dom";
 import "./LoginPage.css";
 import maharaja from '../../Images/maharaja.png';
 
-
 const LoginPage = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
+  const [role, setRole] = useState("customer"); // Added role state
   const navigate = useNavigate();
 
   const handleLogin = () => {
     if (username && password) {
       console.log("Username:", username);
       console.log("Password:", password);
-      navigate("/home"); // Navigate to HomePage after successful login
+      // Redirect based on role
+      if (role === "admin") {
+        navigate("/admin-home"); // Navigate to AdminHomePage
+      } else {
+        navigate("/home"); // Navigate to HomePage for customers
+      }
     } else {
       alert("Please enter both username and password");
     }
@@ -27,8 +32,7 @@ const LoginPage = () => {
     <div className="login-page">
       <img src={maharaja} alt="Welcome" className="welcome-image" />
       <div className="login-card">
-        <h2>Login to Maharaja Restaurant
-        </h2>
+        <h2>Login to Maharaja Restaurant</h2>
         <div className="login-form">
           <label htmlFor="username">Phone Number:</label>
           <input
@@ -47,6 +51,16 @@ const LoginPage = () => {
             onChange={(e) => setPassword(e.target.value)}
             placeholder="Enter your password"
           />
+
+          <label htmlFor="role">Role:</label>
+          <select
+            id="role"
+            value={role}
+            onChange={(e) => setRole(e.target.value)}
+          >
+            <option value="customer">Customer</option>
+            <option value="admin">Admin</option>
+          </select>
 
           <button onClick={handleLogin} className="login-button">
             Login

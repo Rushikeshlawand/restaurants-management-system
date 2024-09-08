@@ -7,6 +7,7 @@ import MenuCard from './components/CustomerPortal/MenuCard/MenuCard';
 import ContactPage from './components/CustomerPortal/ContactPage/ContactPage'; 
 import TestimonialsPage from './components/CustomerPortal/Testimonials/Testimonials'; 
 import MyOrder from './components/CustomerPortal/MyOrder/MyOrder'; // Import MyOrder
+import AdminHomePage from './components/AdminPortal/AdminHomePage/Home'; // Import AdminHomePage
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/contact" element={<ContactPage />} /> 
         <Route path="/testimonials" element={<TestimonialsPage />} /> 
         <Route path="/myorder" element={<MyOrder />} /> {/* Add Route for MyOrder */}
+        <Route path="/admin-home" element={<AdminHomePage />} /> {/* Add Route for AdminHomePage */}
       </Routes>
     </Router>
   );
