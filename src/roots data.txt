@@ -34,8 +34,8 @@ src
 |-- components
 |   |-- Admin
 |   |   |-- HomePage
-|   |   |   |-- HomePage.js
-|   |   |   |-- HomePage.css
+|   |   |   |-- Home.js
+|   |   |   |-- Home.css
 |   |   |
 |   |   |-- [Other Admin Components]
 |   |
