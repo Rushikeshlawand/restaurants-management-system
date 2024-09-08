@@ -1,0 +1,76 @@
+Project Overview
+
+Restaurant Management System is a web application built using React and CSS. The system is designed to facilitate operations in a restaurant, featuring three distinct portals:
+
+    Admin Portal:
+        Purpose: Enables administrators to manage various aspects of the restaurant.
+        Features:
+            Add and update menu items.
+            Upload and manage homepage photos.
+            Oversee and manage customer information.
+
+    Chef Portal:
+        Purpose: Allows chefs to handle food orders.
+        Features:
+            View and manage incoming orders.
+            Prepare food based on orders received from the customer portal.
+
+    Customer Portal:
+        Purpose: Provides customers with a user interface to interact with the restaurant.
+        Features:
+            Log in to the system.
+            Browse the menu and place orders.
+            View and manage their orders.
+
+file structure of this project
+
+
+src
+|
+|-- Images
+|   |-- carousel
+|   |-- restaurant
+|
+|-- components
+|   |-- Admin
+|   |   |-- HomePage
+|   |   |   |-- HomePage.js
+|   |   |   |-- HomePage.css
+|   |   |
+|   |   |-- [Other Admin Components]
+|   |
+|   |-- CustomerPortal
+|   |   |-- HomePage
+|   |   |   |-- Home.js
+|   |   |   |-- Home.css
+|   |   |
+|   |   |-- Footer
+|   |   |   |-- Footer.js
+|   |   |   |-- Footer.css
+|   |   |
+|   |   |-- MenuCard
+|   |   |   |-- FoodItemCard.js
+|   |   |   |-- FoodItemCard.css
+|   |   |   |-- MenuCard.js
+|   |   |   |-- MenuCard.css
+|   |   |
+|   |   |-- MyOrder
+|   |   |   |-- MyOrder.js
+|   |   |
+|   |   |-- Navbar
+|   |   |   |-- Navbar.js
+|   |   |   |-- Navbar.css
+|   |   |
+|   |   |-- SignUpPage
+|   |   |   |-- SignUpPage.js
+|   |   |   |-- SignUpPage.css
+|   |   |
+|   |   |-- Testimonials
+|   |   |   |-- Testimonials.js
+|   |   |   |-- Testimonials.css
+|   |   |
+|   |   |-- Login
+|   |       |-- LoginPage.js
+|   |       |-- LoginPage.css
+|
+|-- App.js

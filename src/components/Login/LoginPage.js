@@ -27,15 +27,16 @@ const LoginPage = () => {
     <div className="login-page">
       <img src={maharaja} alt="Welcome" className="welcome-image" />
       <div className="login-card">
-        <h2>Login to MAHARAJA HOTEL</h2>
+        <h2>Login to Maharaja Restaurant
+        </h2>
         <div className="login-form">
-          <label htmlFor="username">Username:</label>
+          <label htmlFor="username">Phone Number:</label>
           <input
             type="text"
             id="username"
             value={username}
             onChange={(e) => setUsername(e.target.value)}
-            placeholder="Enter your username"
+            placeholder="Enter your phone number"
           />
 
           <label htmlFor="password">Password:</label>

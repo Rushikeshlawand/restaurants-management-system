@@ -1,10 +1,19 @@
+.background-img {
+  background-image: url('../../../Images/Menucard/Menucardbackground.jpg');
+  background-size: cover;
+  position: relative;
+  min-height: 100vh;
+  padding: 20px;
+
+}
+
 .menu-card-container {
   display: flex;
   margin: 20px;
-  margin-top: 100px;
+  margin-top: 150px;
   padding: 20px;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
 }
 
 .sidebar {
@@ -16,6 +25,7 @@
 .sidebar h2 {
   font-size: 24px;
   margin-bottom: 10px;
+  color: #ffffff;
 }
 
 .sidebar ul {
@@ -29,6 +39,7 @@
   margin-bottom: 5px;
   border-radius: 5px;
   transition: background-color 0.3s;
+  background-color: #eee;
 }
 
 .sidebar ul li:hover {
@@ -43,6 +54,31 @@
 .food-items {
   width: 60%;
   padding: 0 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  color: #ffffff;
+}
+
+.food-item-card {
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.star-rating {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.star-filled {
+  color: rgb(0, 255, 17);
+  margin-right: 5px;
+}
+
+.star-empty {
+  color: #ddd;
+  margin-right: 5px;
 }
 
 .bill-summary {
@@ -79,4 +115,14 @@
 .grand-total {
   font-size: 18px;
   color: #4CAF50;
+}
+
+.finalize-order-button {
+  background-image: url('../../../Images/Homepage/Orderfood.png');
+  margin-right: 10px; /* Space between the image and the text */
+  background-size: cover;
+  height: 50px;
+  width: 150px;
+  border: none;
+  cursor: pointer;
 }

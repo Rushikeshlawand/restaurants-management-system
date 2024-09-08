@@ -1,4 +1,6 @@
 import React from 'react';
+import Navbar from '../Navbar/Navbar'; // Adjust path as needed
+import Footer from '../Footer/Footer'; // Adjust path as needed
 import './Testimonials.css';
 
 const testimonials = [
@@ -11,22 +13,26 @@ const testimonials = [
 const TestimonialsPage = () => {
     return (
         <div className="testimonials-page">
-            <h1>Customer Testimonials</h1>
-            <div className="testimonials-container">
-                {testimonials.map(testimonial => (
-                    <div
-                        key={testimonial.id}
-                        className={`testimonial-card tilt-${testimonial.id % 2 === 0 ? 'left' : 'right'}`}
-                    >
-                        <div className="left-side">{testimonial.emoji}</div>
-                        <div className="right-side">{testimonial.emoji}</div>
-                        <h3>{testimonial.name}</h3>
-                        <div className="rating">{'⭐'.repeat(testimonial.rating)}</div>
-                        <p>{testimonial.message}</p>
-                        <p><strong>Favorite Dish:</strong> {testimonial.favoriteDish}</p>
-                    </div>
-                ))}
+            <Navbar />
+            <div className="testimonials-content">
+                <h1>Customer Testimonials</h1>
+                <div className="testimonials-container">
+                    {testimonials.map(testimonial => (
+                        <div
+                            key={testimonial.id}
+                            className={`testimonial-card tilt-${testimonial.id % 2 === 0 ? 'left' : 'right'}`}
+                        >
+                            <div className="left-side">{testimonial.emoji}</div>
+                            <div className="right-side">{testimonial.emoji}</div>
+                            <h3>{testimonial.name}</h3>
+                            <div className="rating">{'⭐'.repeat(testimonial.rating)}</div>
+                            <p>{testimonial.message}</p>
+                            <p><strong>Favorite Dish:</strong> {testimonial.favoriteDish}</p>
+                        </div>
+                    ))}
+                </div>
             </div>
+            <Footer />
         </div>
     );
 };

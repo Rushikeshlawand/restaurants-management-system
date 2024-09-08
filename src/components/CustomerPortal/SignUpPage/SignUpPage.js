@@ -1,9 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './SignUpPage.css';
-import maharaja from '../../../Images/maharaja.png';
-
-
+import maharaja from '../../../Images/maharaja.png'; // Ensure the correct path to the image
 
 const SignupPage = () => {
   const [name, setName] = useState('');
@@ -26,7 +24,7 @@ const SignupPage = () => {
     <div className="signup-page">
       <img src={maharaja} alt="Sign Up" className="signup-image" />
       <div className="signup-card">
-        <h1>Sign Up to MAHARAJA HOTEL</h1>
+        <h1>Sign Up to Maharaja Restaurant</h1>
         <div className="signup-info">
           <label htmlFor="name">Enter your name:</label>
           <input
@@ -37,14 +35,7 @@ const SignupPage = () => {
             placeholder="Your Name"
           />
 
-          <label htmlFor="email">Enter your email:</label>
-          <input
-            type="email"
-            id="email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            placeholder="Your Email"
-          />
+          
 
           <label htmlFor="phone">Enter your phone number:</label>
           <input
@@ -53,6 +44,15 @@ const SignupPage = () => {
             value={phone}
             onChange={(e) => setPhone(e.target.value)}
             placeholder="Your Phone Number"
+          />
+
+<label htmlFor="email">Enter your Password:</label>
+          <input
+            type="email"
+            id="email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            placeholder="Your Password"
           />
 
           <button onClick={handleSignUp} className="sign-up-button">

@@ -2,15 +2,34 @@
     padding: 20px;
     background-color: #f9f9f9;
     min-height: 100vh;
+    background-size: cover;
+    background-position: center;
 }
 
-.order-summary {
-    max-width: 800px;
+.order-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
     margin: 0 auto;
+}
+
+.order-items {
+    width: 65%;
     background-color: #fff;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-right: 40px
+}
+
+.bill-summary {
+    width: 30%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    
 }
 
 h2 {
@@ -19,12 +38,19 @@ h2 {
     color: #333;
 }
 
+.order-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .order-card {
     display: flex;
     align-items: center;
+    width: 48%;
     margin-bottom: 20px;
-    padding: 10px;
+    margin-right: 2%;
     background-color: #fff;
+    padding: 10px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -41,24 +67,30 @@ h2 {
     flex: 1;
 }
 
-.remove-item-button, .finalize-order-button, .call-waiter-button {
+.remove-item-button {
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.remove-item-button:hover {
+    background-color: #c0392b;
+}
+
+.finalize-order-button, .call-waiter-button, .back-to-menu-button {
     display: inline-block;
     padding: 10px 20px;
-    margin: 5px;
+    margin: 10px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     color: #fff;
     font-size: 16px;
     transition: background-color 0.3s;
-}
-
-.remove-item-button {
-    background-color: #e74c3c;
-}
-
-.remove-item-button:hover {
-    background-color: #c0392b;
 }
 
 .finalize-order-button {
@@ -77,6 +109,14 @@ h2 {
     background-color: #2980b9;
 }
 
+.back-to-menu-button {
+    background-color: #f39c12;
+}
+
+.back-to-menu-button:hover {
+    background-color: #e67e22;
+}
+
 .order-total {
     margin-top: 20px;
     padding-top: 20px;
@@ -87,4 +127,8 @@ h2 {
     font-weight: bold;
     font-size: 18px;
     color: #2c3e50;
+}
+
+.button-group {
+    margin-top: 20px;
 }
