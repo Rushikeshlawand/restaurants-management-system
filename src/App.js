@@ -8,7 +8,6 @@ import ContactPage from './components/CustomerPortal/ContactPage/ContactPage';
 import TestimonialsPage from './components/CustomerPortal/Testimonials/Testimonials'; 
 import MyOrder from './components/CustomerPortal/MyOrder/MyOrder'; // Import MyOrder
 import AdminHomePage from './components/AdminPortal/AdminHomePage/Home'; // Import AdminHomePage
-
 function App() {
   return (
     <Router>
