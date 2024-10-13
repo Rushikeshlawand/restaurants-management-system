@@ -6,7 +6,7 @@ import HomePage from './components/CustomerPortal/HomePage/HomePage';
 import MenuCard from './components/CustomerPortal/MenuCard/MenuCard'; 
 import ContactPage from './components/CustomerPortal/ContactPage/ContactPage'; 
 import TestimonialsPage from './components/CustomerPortal/Testimonials/Testimonials'; 
-import MyOrder from './components/CustomerPortal/MyOrder/MyOrder'; // Import MyOrder
+import MyOrder from './components/CustomerPortal/MyOrder/MyOrder'; // Import MyOrder 
 import AdminHomePage from './components/AdminPortal/AdminHomePage/Home'; 
 function App() {
   return (  
