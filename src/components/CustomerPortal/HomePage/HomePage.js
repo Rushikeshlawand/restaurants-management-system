@@ -5,7 +5,7 @@ import Footer from '../Footer/Footer';
 import backgroundImage from '../../../Images/Homepage/HomepageBackground.jpg';
 import orderFoodIcon from '../../../Images/Homepage/Orderfood.png'; // Import the image
 
-const HomePage = () => {
+const HomePage = () => { 
     return (
         <div className="homepage" style={{ backgroundImage: `url(${backgroundImage})` }}>
             <header className="header">
